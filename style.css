@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 800px;
+  border: 10px solid rgb(0, 0, 0, 0.1);
+  margin: 2rem auto 2rem auto;
+  background-image: url(./img/elderly-3628304_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  max-height: 48rem;
+  /* width: 100%; */
+}
+.backimg {
+  background-color: rgb(0, 0, 0, 0.6);
+  /* height: 93%; */
+  margin: 2rem;
+  padding: 2rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav button {
+  /* border: 2px solid red; */
+  border: none;
+  padding: 1rem;
+  border-radius: 10%;
+  font-family: "Dancing Script", cursive;
+  /* font-family: 'Protest Riot', sans-serif;; */
+  background-color: inherit;
+  color: rgba(255, 228, 196, 0.716);
+}
+nav button:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+main h1 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: rgba(255, 228, 196, 0.716);
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.box img {
+  border-radius: 10%;
+  width: 300px;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    background-image: url(./img/kid-1241817_1280.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .backimg {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 10%;
+    margin: 1rem;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  main h1 {
+    color: black;
+    order: 0;
+    font-size: 2rem;
+    /* width: 50%; */
+    flex-shrink: 2;
+  }
+  nav button {
+    background-color: inherit;
+    border: none;
+    color: black;
+    font-size: 1rem;
+  }
+
+  .box img {
+    content: url(./img/marriage-4226896_1280.jpg);
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    height: 25rem;
+    background-image: url(./img/hands-7107606_1280.png);
+    /* display: flex; */
+    background-position: center;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    min-width: 200px;
+    
+  }
+  .backimg{
+    background-color: rgb(255, 255, 255,0.2);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+
+  
+  }
+  /* main {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+  /* }*/ 
+  
+  main h1{
+    color: black;
+    /* order: 0; */
+    font-size: 1.5rem;
+    /* width: 50%; */
+    flex-shrink: 2;
+    justify-content: flex-start;
+    /* word-spacing: 5rem; */
+    flex-basis: 50%;
+  }
+  nav{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 25%;
+  }
+  nav button {
+    background-color: inherit;
+    border: none;
+    color: #EFA597;
+    font-size: 0.8rem;
+    
+  }
+
+  .box img {
+    display: none;
+  }
+}
